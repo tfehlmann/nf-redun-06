@@ -1,6 +1,6 @@
 {
-    "name": "nf-core/snrnaseq",
-    "homePage": "https://github.com/nf-core/snrnaseq",
+    "name": "tfehlmann/nf-redun-06",
+    "homePage": "https://github.com/tfehlmann/nf-redun-06",
     "repos": {
         "nf-core/modules": {
             "bwamem2/index": {

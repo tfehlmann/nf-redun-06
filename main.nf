@@ -1,11 +1,9 @@
 #!/usr/bin/env nextflow
 /*
 ========================================================================================
-    nf-core/snrnaseq
+    tfehlmann/nf-redun-06
 ========================================================================================
-    Github : https://github.com/nf-core/snrnaseq
-    Website: https://nf-co.re/snrnaseq
-    Slack  : https://nfcore.slack.com/channels/snrnaseq
+    Github : https://github.com/tfehlmann/nf-redun-06
 ----------------------------------------------------------------------------------------
 */
 
@@ -33,13 +31,13 @@ WorkflowMain.initialise(workflow, params, log)
 ========================================================================================
 */
 
-include { SNRNASEQ } from './workflows/snrnaseq'
+include { EXAMPLE } from './workflows/example'
 
 //
-// WORKFLOW: Run main nf-core/snrnaseq analysis pipeline
+// WORKFLOW: Run main nf-redun-06 analysis pipeline
 //
-workflow NFCORE_SNRNASEQ {
-    SNRNASEQ ()
+workflow NF_REDUN_06 {
+    EXAMPLE ()
 }
 
 /*
@@ -53,7 +51,7 @@ workflow NFCORE_SNRNASEQ {
 // See: https://github.com/nf-core/rnaseq/issues/619
 //
 workflow {
-    NFCORE_SNRNASEQ ()
+    NF_REDUN_06 ()
 }
 
 /*

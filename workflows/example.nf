@@ -7,12 +7,12 @@
 def summary_params = NfcoreSchema.paramsSummaryMap(workflow, params)
 
 // Validate input parameters
-WorkflowSnrnaseq.initialise(params, log)
+WorkflowExample.initialise(params, log)
 
 // TODO nf-core: Add all file path parameters for the pipeline to the list below
 // Check input path parameters to see if they exist
 def checkPathParamList = [
-    params.input, params.multiqc_config,
+    params.input,
     params.genome_fasta,
     params.known_indels,
     params.known_snps,
@@ -72,10 +72,7 @@ include { CUSTOM_DUMPSOFTWAREVERSIONS } from '../modules/nf-core/modules/custom/
 ========================================================================================
 */
 
-// Info required for completion email and summary
-def multiqc_report = []
-
-workflow SNRNASEQ {
+workflow EXAMPLE {
 
     ch_versions = Channel.empty()
 
@@ -175,10 +172,6 @@ workflow SNRNASEQ {
         ch_versions.unique().collectFile(name: 'collated_versions.yml')
     )
 
-    //
-    // MODULE: MultiQC
-    //
-    workflow_summary    = WorkflowSnrnaseq.paramsSummaryMultiqc(workflow, summary_params)
 }
 
 /*
@@ -188,9 +181,6 @@ workflow SNRNASEQ {
 */
 
 workflow.onComplete {
-    if (params.email || params.email_on_fail) {
-        NfcoreTemplate.email(workflow, params, summary_params, projectDir, log, multiqc_report)
-    }
     NfcoreTemplate.summary(workflow, params, log)
 }
 

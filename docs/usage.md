@@ -1,6 +1,5 @@
-# nf-core/snrnaseq: Usage
+# tfehlmann/nf-redun-06: Usage
 
-## :warning: Please read this documentation on the nf-core website: [https://nf-co.re/snrnaseq/usage](https://nf-co.re/snrnaseq/usage)
 
 > _Documentation of pipeline parameters is generated automatically from the pipeline schema and can no longer be found in markdown files._
 
@@ -57,7 +56,7 @@ An [example samplesheet](../assets/samplesheet.csv) has been provided with the p
 The typical command for running the pipeline is as follows:
 
 ```console
-nextflow run nf-core/snrnaseq --input samplesheet.csv --genome GRCh37 -profile docker
+nextflow run tfehlmann/nf-redun-06 --input samplesheet.csv --genome GRCh37 -profile docker
 ```
 
 This will launch the pipeline with the `docker` configuration profile. See below for more information about profiles.
@@ -76,14 +75,14 @@ results         # Finished results (configurable, see below)
 When you run the above command, Nextflow automatically pulls the pipeline code from GitHub and stores it as a cached version. When running the pipeline after this, it will always use the cached version if available - even if the pipeline has been updated since. To make sure that you're running the latest version of the pipeline, make sure that you regularly update the cached version of the pipeline:
 
 ```console
-nextflow pull nf-core/snrnaseq
+nextflow pull tfehlmann/nf-redun-06
 ```
 
 ### Reproducibility
 
 It is a good idea to specify a pipeline version when running the pipeline on your data. This ensures that a specific version of the pipeline code and software are used when you run your pipeline. If you keep using the same tag, you'll be running the same version of the pipeline, even if there have been changes to the code since.
 
-First, go to the [nf-core/snrnaseq releases page](https://github.com/nf-core/snrnaseq/releases) and find the latest version number - numeric only (eg. `1.3.1`). Then specify this when running the pipeline with `-r` (one hyphen) - eg. `-r 1.3.1`.
+First, go to the [tfehlmann/nf-redun-06 releases page](https://github.com/tfehlmann/nf-redun-06/releases) and find the latest version number - numeric only (eg. `1.3.1`). Then specify this when running the pipeline with `-r` (one hyphen) - eg. `-r 1.3.1`.
 
 This version number will be logged in reports when you run the pipeline, so that you'll know what you used when you look back in the future.
 

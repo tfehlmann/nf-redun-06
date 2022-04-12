@@ -1,5 +1,5 @@
 //
-// This file holds several functions specific to the main.nf workflow in the nf-core/snrnaseq pipeline
+// This file holds several functions specific to the main.nf workflow in the nf-redun-06 pipeline
 //
 
 class WorkflowMain {

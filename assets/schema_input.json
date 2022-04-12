@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/nf-core/snrnaseq/master/assets/schema_input.json",
-    "title": "nf-core/snrnaseq pipeline - params.input schema",
+    "$id": "https://raw.githubusercontent.com/tfehlmann/nf-redun-06/main/assets/schema_input.json",
+    "title": "nf-redun-06 pipeline - params.input schema",
     "description": "Schema for the file provided with params.input",
     "type": "array",
     "items": {

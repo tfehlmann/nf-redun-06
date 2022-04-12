@@ -1,4 +1,4 @@
-# nf-core/snrnaseq: Citations
+# tfehlmann/nf-redun-06: Citations
 
 ## [nf-core](https://pubmed.ncbi.nlm.nih.gov/32055031/)
 
