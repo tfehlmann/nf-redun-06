@@ -1,0 +1,3 @@
+sample,fastq_1,fastq_2
+sample1,s3://sra-pub-src-7/SRR18550927/Posterior%20polar%20cataract_IV3_R1.fastq.gz.1,s3://sra-pub-src-7/SRR18550927/Posterior%20polar%20cataract_IV3_R2.fastq.gz.1
+sample2,s3://sra-pub-src-7/SRR18550926/Posterior%20polar%20cataract_II2_R1.fastq.gz.1,s3://sra-pub-src-7/SRR18550926/Posterior%20polar%20cataract_II2_R2.fastq.gz.1
