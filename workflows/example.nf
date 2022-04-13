@@ -116,7 +116,7 @@ workflow EXAMPLE {
 
 
     CUTADAPT(
-        CAT_FASTQ.out.reads
+        ch_cat_fastq
     )
     ch_versions = ch_versions.mix(CUTADAPT.out.versions)
 
