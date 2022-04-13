@@ -1,3 +1,3 @@
 sample,fastq_1,fastq_2
-sample1,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR185/027/SRR18550927/SRR18550927_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR185/027/SRR18550927/SRR18550927_2.fastq.gz
-sample2,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR185/026/SRR18550926/SRR18550926_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR185/026/SRR18550926/SRR18550926_2.fastq.gz
+sample1,s3://nextflowtest/wes_data/samples/sample1/SRR18550926_1.fastq.gz,s3://nextflowtest/wes_data/samples/sample1/SRR18550926_2.fastq.gz
+sample2,s3://nextflowtest/wes_data/samples/sample2/SRR18550927_1.fastq.gz,s3://nextflowtest/wes_data/samples/sample2/SRR18550927_2.fastq.gz
